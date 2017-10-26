@@ -1,4 +1,25 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Didot';
+  src: url("../fonts/Didot.ttf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Didot.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Didot-Italic';
+  src: url("../fonts/Didot-Italic.ttf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Didot-Italic.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Didot-Bold';
+  src: url("../fonts/Didot-Bold.ttf");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Didot-Bold.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
 /*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache

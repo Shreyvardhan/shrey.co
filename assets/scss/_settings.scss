@@ -3,3 +3,22 @@
 $garamond: "garamond-premier-pro", sans-serif;
 $futura: "futura-pt", sans-serif;
 
+@font-face {
+  font-family: 'Didot';
+  src: url('../fonts/Didot.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/Didot.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Didot-Italic';
+  src: url('../fonts/Didot-Italic.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/Didot-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Didot-Bold';
+  src: url('../fonts/Didot-Bold.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/Didot-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
