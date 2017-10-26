@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Didot';
+  font-family: 'Didot1';
   src: url("../fonts/Didot.ttf");
   /* IE9 Compat Modes */
-  src: url("../fonts/Didot.ttf") format("truetype");
+  src: url("../fonts/Didot.eot?#iefix") format("embedded-opentype"), url("../fonts/Didot.woff2") format("woff2"), url("../fonts/Didot.woff") format("woff"), url("../fonts/Didot.ttf") format("truetype");
   /* Safari, Android, iOS */ }
 
 @font-face {
@@ -14,10 +14,10 @@
   /* Safari, Android, iOS */ }
 
 @font-face {
-  font-family: 'Didot-Bold';
-  src: url("../fonts/Didot-Bold.ttf");
+  font-family: 'Didot1-Bold';
+  src: url("../fonts/DidotBold.ttf");
   /* IE9 Compat Modes */
-  src: url("../fonts/Didot-Bold.ttf") format("truetype");
+  src: url("../fonts/DidotBold.eot?#iefix") format("embedded-opentype"), url("../fonts/DidotBold.woff2") format("woff2"), url("../fonts/DidotBold.woff") format("woff"), url("../fonts/DidotBold.ttf") format("truetype");
   /* Safari, Android, iOS */ }
 
 /*
@@ -563,7 +563,7 @@ body#home section span.subhead {
   color: #333; }
 
 body#home section h3.subhead {
-  font-family: "Didot";
+  font-family: "Didot1-Bold";
   font-weight: 600;
   padding-bottom: 2rem; }
 

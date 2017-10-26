@@ -4,9 +4,12 @@ $garamond: "garamond-premier-pro", sans-serif;
 $futura: "futura-pt", sans-serif;
 
 @font-face {
-  font-family: 'Didot';
+  font-family: 'Didot1';
   src: url('../fonts/Didot.ttf'); /* IE9 Compat Modes */
-  src: url('../fonts/Didot.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: url('../fonts/Didot.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Didot.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Didot.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Didot.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -16,9 +19,12 @@ $futura: "futura-pt", sans-serif;
 }
 
 @font-face {
-  font-family: 'Didot-Bold';
-  src: url('../fonts/Didot-Bold.ttf'); /* IE9 Compat Modes */
-  src: url('../fonts/Didot-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-family: 'Didot1-Bold';
+  src: url('../fonts/DidotBold.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/DidotBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/DidotBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/DidotBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/DidotBold.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 
