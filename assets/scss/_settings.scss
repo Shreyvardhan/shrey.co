@@ -13,6 +13,14 @@ $futura: "futura-pt", sans-serif;
 }
 
 @font-face {
+  font-family: 'Lato1';
+  src: url('../fonts/Lato_Bold.ttf'); /* IE9 Compat Modes */
+  src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Lato-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Lato-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
   font-family: 'Didot-Italic';
   src: url('../fonts/Didot-Italic.ttf'); /* IE9 Compat Modes */
   src: url('../fonts/Didot-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
