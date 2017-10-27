@@ -1160,12 +1160,8 @@ body#home section#footer {
 @media only screen and (max-width: 375px) {
   body#home .container {
     width: 95%; }
-  body#home section {
-    background: #fafafa; }
-    body#home section.grey {
-      background: #fff; }
-    body#home section#work div.container#projects {
-      max-width: 95%; }
+  body#home section#work div.container#projects {
+    max-width: 95%; }
   body#home header#masthead {
     text-align: center;
     -webkit-transform: translate3d(0, 0px, 0);
