@@ -415,12 +415,13 @@
 
 		section {
 
-			background: #fafafa;
-			&.grey {
-				background: #fff;
-			}
+			// background: #fafafa;
+			// &.grey {
+			// 	background: #fff;
+			// }
 
 			&#about {
+				background: #fafafa;
 				padding-top: 145px;
 				border-bottom: 2px solid #eee;
 				padding-bottom: 3rem;
