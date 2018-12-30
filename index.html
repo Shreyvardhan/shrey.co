@@ -34,10 +34,7 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/app.css">
 		<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
-
-		<!-- Typekit -->
-		<script src="https://use.typekit.net/ghd5fbj.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<link rel="stylesheet" href="https://use.typekit.net/pnf5fhk.css">
 
 		<!-- Analytics -->
 		<script>
@@ -65,15 +62,18 @@
 						
 						<img src="assets/media/images/icons/logo.png" ui-sref="home">
 						<h3><a ui-sref="home">
-							Shreyvardhan Sharma
-
+							<span>Shreyvardhan Sharma</span> 
 						</a></h3>
 
 					</div>
 
 					<div class="six columns right">
 						
-					Interaction Designer &amp; Web Developer
+						<ul id="nav-right">
+							<li><a ui-sref="home" class="current">Home</a></li>
+							<li><a href="https://medium.com/@ShreyvardhanSharma">Blog</a></li>
+							<li><a href="#">Resumé</a></li>
+						</ul>
 
 					</div>
 
@@ -93,13 +93,15 @@
 
 						<div class="eight columns">
 
-							<h3 class="subhead">About</h3>
-							
-							<p>Hello. I&rsquo;m Shrey. I make things. </p>
+							<h3 class="subhead">Hey, I'm Shrey.</h3>
 
-							<p>I'm an interaction designer and web developer based in New Delhi, India passionate about solving problems. <a href="#" class="read-more xs" readmore-click><i class="icon ion-ios-arrow-down"></i></a><span class="read-less xs">Currently aged 16, I am a highschool senior at The Mother's International School in New Delhi. I believe that good design is as little design as possible, and this is something I try to reflect in my work — clean, yet elegant; simple, yet efficient. <a href="#" class="read-more sm"><i class="icon ion-ios-arrow-down" readmore-click></i></a></span></p>
+							<p>I make things. </p>
+
+							<p>Hailing from New Delhi, India, I'm currently a freshman at Harvard University, Class of 2022. Apart from being a full-time student, I'm an interaction designer and web developer based out of Cambridge, MA, passionate about solving problems. I believe that good design is as little design as possible, and this is something I try to reflect in my work — clean, yet elegant; simple, yet efficient.</p>
 
 							<p><span class="read-less sm xs">I like solving problems with code, and in my free time, I enjoy working on personal projects and experimenting with new tools and languages.</p></span>
+
+							<p class="italic">Currently looking &nbsp;for Summer 2019 Internships. <a href="mailto:mail@shrey.co">Get in touch.</a></p>
 
 						</div>
 
@@ -117,7 +119,13 @@
 						
 						<div class="twelve columns">
 							
-							<h3 class="subhead">Creations</h3>
+							<h3 class="subhead">I craft minimal experiences.</h3>
+
+							<p><span class="read-less sm xs">I work with organisations, start-ups, schools, and individuals to craft <span class="bold">honest</span>, <span class="bold">meaningful</span>, and <span class="bold">unobtrusive</span> visual identities, with an emphasis on <span class="bold">simplicity</span> and <span class="bold">clarity</span> of vision. </p></span>
+
+							<p>I believe that <span class="bold">purpose</span> is fundamental to design, and much of my work involves using code and design to innovate elegant solutions to everyday problems, from <a ui-sref="safai">combating garbage-strewn streets in Delhi</a> to <a ui-sref="ppp">fighting for equal property rights for Indian women</a>.</p>
+
+							<p>Click on a project below to view it.</p>
 
 						</div>
 
@@ -136,8 +144,8 @@
 						
 
 						<div class="four columns" ui-sref="safai">
-							<div class="img-wrap" style="background: #eee">
-								<img src="/assets/media/images/work/safai/logo-01.png" style="display: table-cell;vertical-align: middle;">
+							<div class="img-wrap" style="background: #034748">
+								<img src="/assets/media/images/work/safai/logo-02.png" style="display: table-cell;vertical-align: middle;">
 							</div>
 							<div class="info">
 								<h4>Saf.AI</h4>
@@ -147,6 +155,7 @@
 
 						<div class="eight columns type1" ui-sref="pixel">
 							<div class="img-wrap" id="particles-js" style="">
+								<!-- <img src="/assets/media/images/work/p2p/stars.jpg" id="stars"> -->
 								<img src="/assets/media/images/work/p2p/banner2.png">
 								<img src="/assets/media/images/work/p2p/banner3.png" class="sm">
 							</div>
@@ -161,7 +170,7 @@
 					<div class="row">
 						
 						<div class="eight columns type2" ui-sref="ppp">
-							<div class="img-wrap" style="background: #f1f1f1">
+							<div class="img-wrap" style="background: #fff;border:2px solid #EB4C2E">
 								<img src="/assets/media/images/work/ppp/ppp_trnsp.png">
 								<img src="/assets/media/images/work/ppp/5.png" class="sm">
 							</div>
@@ -172,9 +181,11 @@
 						</div>
 
 						<div class="four columns" ui-sref="apollo">
-							<div class="img-wrap" style="background: #f1f1f1">
-								<img src="/assets/media/images/work/apollo/apollo.png">
-								<img src="/assets/media/images/work/apollo/apollo.png" class="sm">
+							<div class="img-wrap" style="" id="apollo">
+
+								<div class="overlay"><img src="/assets/media/images/work/apollo/apollo0.png"></div>
+								
+								<img src="/assets/media/images/work/apollo/apollo0.png" class="sm">
 							</div>
 							<div class="info">
 								<h4>Apollo</h4>
@@ -187,8 +198,8 @@
 					<div class="row">
 						
 						<div class="four columns" ui-sref="pe">
-							<div class="img-wrap" style="background: #eee">
-								<img src="/assets/media/images/work/pe/pe.png" style="display: table-cell;vertical-align: middle;">
+							<div class="img-wrap" style="background: #343434">
+								<img src="/assets/media/images/work/pe/pe-logo.jpg" style="display: table-cell;vertical-align: middle;">
 							</div>
 							<div class="info">
 								<h4>Project Element</h4>
@@ -234,6 +245,31 @@
 
 					</div>
 
+					<div class="row">
+
+						<div class="eight columns type2" ui-sref="navchetna">
+							<div class="img-wrap" style="background: #FCE2DF;">
+								<img src="/assets/media/images/work/navchetna/navchetna.png">
+								<!-- <img src="/assets/media/images/work/minet/minet.png" class="sm"> -->
+							</div>
+							<div class="info">
+								<h4>Navchetna</h4>
+								<span>Print Design &amp;  Branding</span>
+							</div>
+						</div>
+
+						<div class="four columns">
+							<div class="img-wrap" style="background: ">
+								<img src="/assets/media/images/work/misc/layer.png">
+							</div>
+							<div class="info">
+								<h4>Layer</h4>
+								<span>Coming Soon</span>
+							</div>
+						</div>
+
+					</div>
+
 				</div> 
 
 			</section>
@@ -246,9 +282,9 @@
 						
 						<div class="twelve columns">
 							
-							<h3 class="subhead">Thoughts</h3>
+							<h3 class="subhead">I tell stories.</h3>
 
-							<p>I often pen down my thoughts in the form of a <a class="blog-link" href="https://medium.com/@ShreyvardhanSharma">blog.</a></p>
+							<p>I am a storyteller &mdash; when not weaving narratives with design, I pen down my thoughts in the form of <a class="blog-link" href="https://medium.com/@ShreyvardhanSharma">my blog</a>.</p>
 
 						</div>
 
@@ -356,19 +392,9 @@
 
 						<div class="twelve columns">
 
-							<h3 class="subhead">Contact</h3>
+							<h3 class="subhead">Get in touch.</h3>
 							
-							<p>If you think I would be a good fit to work with, or just want to know more, feel free to get in touch with me at <a href="mailto:mail@shrey.co">mail@shrey.co</a>, or connect with me on social media.</p>
-
-							<ul class="social">
-								<li><a href="http://facebook.com/ShreyvardhanSharma"><i class="ion-social-facebook"></i>ShreyvardhanSharma</a></li>
-								<li><a href="http://twitter.com/ShreyvardhanS"><i class="ion-social-twitter"></i>@ShreyvardhanS</a></li>
-								<li><a href="http://github.com/Shreyvardhan"><i class="ion-social-github"></i>shreyvardhan</a></li>
-								<li><a href="http://plus.google.com/+ShreyvardhanSharma"><i class="ion-social-googleplus-outline"></i>+ShreyvardhanSharma</a></li>
-								<li><a href="http://linkedin.com/in/shreyvardhan"><i class="ion-social-linkedin"></i>shreyvardhan</a></li>
-								<li><a href="mailto:mail@shrey.co"><i class="ion-ios-email"></i>mail@shrey.co</a></li>
-							</ul>
-
+							<p>If you think I would be a good fit to work with, or just want to know more, feel free to get in touch with me at <a href="mailto:mail@shrey.co">mail@shrey.co</a>, or connect with me on <a href="http://linkedin.com/in/shreyvardhan">LinkedIn.</a></p>
 
 						</div>
 
@@ -379,8 +405,26 @@
 			</section>
 
 			<section id="footer" class="grey">
-				
-				<p>Made with <i class="ion-heart" style="color: #F14E23"></i> in India.</p>
+
+				<div class="container">
+					
+					<div class="row">
+						
+						<div class="six columns">
+							
+							<p style="text-align: left;">Made with <i class="ion-heart" style="color: #F14E23"></i> in India. No pixels were harmed.</p>
+
+						</div>
+
+						<div class="six columns" style="float: right">
+							
+							<p style="text-align: right;">&copy; Shreyvardhan Sharma 2018</p>
+
+						</div>
+
+					</div>
+
+				</div>
 
 			</section>
 
@@ -406,13 +450,13 @@
 	                    }
 	                },
 	                "color": {
-	                    "value": "#000000"
+	                    "value": "#fff"
 	                },
 	                "shape": {
 	                    "type": "circle",
 	                    "stroke": {
 	                        "width": 0,
-	                        "color": "#000000"
+	                        "color": "#fff"
 	                    },
 	                    "polygon": {
 	                        "nb_sides": 3
@@ -446,7 +490,7 @@
 	                "line_linked": {
 	                    "enable": true,
 	                    "distance": 200,
-	                    "color": "#000000",
+	                    "color": "#fff",
 	                    "opacity": 0.4,
 	                    "width": 1
 	                },

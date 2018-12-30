@@ -1,11 +1,12 @@
 body#home {
 
 	.container {
-		width: 70%;
+		width: 60%;
 	}
 
 	header#masthead {
-		transform: translate3d(0, 25px, 0);
+		display: block;
+		transform: translate3d(0, 35px, 0);
 		text-align: center;
 		overflow: hidden;
 		position: fixed;
@@ -15,10 +16,14 @@ body#home {
 		top: 0px;
 		z-index: 3;
 		transition: all 0.3s ease;
-
+		// border-bottom: thin solid #eee;
 		a {
 			text-decoration: none;
 			color: inherit;
+			span {
+				border-bottom: 2px solid #000;
+				padding-bottom: 0px;
+			}
 			&:hover {
 				color: inherit;
 			}
@@ -28,6 +33,17 @@ body#home {
 			transform: translate3d(0,0,0);
 			background: rgba(255, 255, 255, 0.9);
 			border-bottom: thin solid #eff0f0;
+			h3, .right.columns {
+				line-height: 80px;
+			}
+			img {
+				top: 28px;
+			}
+			a {
+				span {
+					// border-bottom: none;
+				}
+			}
 		}
 		h1 {
 			// font-size: 27px;
@@ -37,51 +53,85 @@ body#home {
 			letter-spacing: 0.01em;
 		}
 		img {
+			display: none;
 			float: left;
 			margin-right: 15px;
 			position: relative;
-			top: 20px;
-			height: 40px;
-			width: 40px;
+			top: 22px;
+			height: 28px;
+			width: 28px;
 			cursor: pointer;
 		}
 		h3 {
 			margin-top: 0;
-			line-height: 82.5px;
+			line-height: 67.5px;
 			text-align: left;
-			font-style: italic;
+			// text-transform: uppercase;
 			letter-spacing: 0.005em;
-			font-size: 27px;
+			font-family: $garamond;
+			font-size: 160%;
+			font-weight: 800;
+			// font-weight: 500;
+			margin-bottom: 0;
 		}
 		.right.columns {
-			font-family: $futura;
-			text-align: left;
-			line-height: 80px;
+			text-align: right;
 			text-transform: uppercase;
-			letter-spacing: 0.1em;
+			font-family: $lato;
 			font-size: 14px;
-			color: #666;
-			position: relative;
-			top: 1px;
-			margin-top: 0;
-			font-weight: 700;
+			font-weight: 800;
+			line-height: 67.5px;
+			letter-spacing: 0.05em;
+			ul#nav-right {
+				li {
+					display: inline;
+					margin: 0 7.5px;
+					a {
+						transition: all 0.2s ease;
+						&.current {
+							border-bottom: 2px solid #000;
+							padding-bottom: 6px;
+						}
+						&:hover {
+							border-bottom: 2px solid #000;
+							padding-bottom: 6px;
+						}
+					}
+				}
+			}
 		}
+		// .right.columns {
+		// 	display: block;
+		// 	font-family: $lato;
+		// 	text-align: right;
+		// 	line-height: 67.5px;
+		// 	text-transform: uppercase;
+		// 	letter-spacing: 0.005em;
+		// 	font-family: $lato;
+		// 	font-size: 14px;
+		// 	font-weight: 500;
+		// 	margin-bottom: 0;
+		// 	position: relative;
+		// 	top: 4px;
+		// }
 	}
 
 	section {
 		span.subhead {
-			font-family: $futura;
+			font-family: $lato;
 			text-align: left;
 			text-transform: uppercase;
 			letter-spacing: 0.1em;
 			font-size: 14px;
-			font-weight: 700;
+			font-weight: 800;
 			color: #333;
 		}
 		h3.subhead {
-			font-family: "Didot1-Bold";
-			font-weight: 600;
-			padding-bottom: 2rem;
+			font-family: $garamond; //Didot1-Bold
+			font-size: 300%;
+			letter-spacing: 0.002em;
+			font-weight: 800;
+			padding-bottom: 0.5rem;
 		}
 		a.read-more {
 			border: thin solid #e9ebea;
@@ -110,10 +160,27 @@ body#home {
 			width: 100%;
 		}
 		&#about {
-			padding-top: 175px;
+			padding-top: 185px;
 			padding-bottom: 6rem;
+			border-bottom: 1px solid #ddd;
 			p.intro {
 				font-style: italic;
+			}
+			p.italic {
+				font-family: $garamond;
+				font-style: italic;
+				font-size: 120%;
+				font-weight: 400;
+				a {
+					color: #69e;
+					border-bottom: 1px solid #69e;
+					padding-bottom: 0px;
+					&:hover {
+						color: #216be6;
+						border-color: #216be6;
+						background: none;
+					}
+				}
 			}
 			img#dp {
 				border: 1px solid #fff;
@@ -132,6 +199,12 @@ body#home {
 				margin-top: 1.5rem;
 				position: relative;
 				right: 60px;
+			}
+			div.work {
+				p.intro {
+					font-family: $garamond;
+					font-size: 140%;
+				}
 			}
 			div.container.keynote {
 				width: 100%;
@@ -157,6 +230,13 @@ body#home {
 					}
 				}
 			}
+			div.row.item {
+				p {
+					font-family: $garamond;
+					font-size: 120%;
+					line-height: 34px;
+				}
+			}
 			div.container.showcase {
 				margin-top: 4rem;
 				.row {
@@ -171,11 +251,12 @@ body#home {
 					.twelve {
 						border: none;
 						p {
+							font-family: $garamond;
 							width: 70%;
 							text-align: center;
 							margin: 0 auto;
 							font-style: italic;
-							font-size: 18px;
+							font-size: 22px;
 							line-height: 24px;
 							display: none;
 							&.active {
@@ -228,12 +309,13 @@ body#home {
 
 		&#blog {
 			background: #fff;
-			border-bottom: 1px solid #eee;
+			border-bottom: 2px solid #eee;
+			padding-top: 5rem;
 			padding-bottom: 5rem;
 			div.container {
 				a.blog-link {
 					text-decoration: none;
-					color: #69e;
+					color: 000;
 				}
 				div#blog-container {
 					padding-top: 3rem;
@@ -253,7 +335,7 @@ body#home {
 							margin-left: 0;
 						}
 						span.blog-date, span.blog-length {
-							font-family: $futura;
+							font-family: $lato;
 							font-size: 15px;
 							color: #666;
 						}
@@ -263,13 +345,14 @@ body#home {
 						blockquote {
 							margin: 0;
 							// font-style: italic;
-							line-height: 1.4;
+							line-height: 1.5;
+							font-size: 16px;
 						}
 						h3.blog-title {
 							font-family: "Lato", sans-serif;
 							letter-spacing: 0.02em;
 							font-weight: 900;
-							font-size: 28px;
+							font-size: 24px;
 							margin-bottom: 0.5rem;
 							a {
 								text-decoration: none;
@@ -277,9 +360,9 @@ body#home {
 							}
 						}
 						p {
-							font-family: $garamond;
-							font-size: 18px;
-							line-height: 1.4;
+							font-family: $lato;
+							font-size: 16px;
+							line-height: 1.5;
 							margin-bottom: 1rem;
 							&.blog-intro {
 								font-family: "Lato";
@@ -294,8 +377,9 @@ body#home {
 		}
 
 		&#work {
-			padding: 6rem 0 6rem 0;
+			padding: 7rem 0 6rem 0;
 			margin-bottom: 2.5rem;
+			border-bottom: 1px solid #ddd;
 			ul {
 				display: inline-block;
 				list-style: none;
@@ -341,7 +425,7 @@ body#home {
 					}
 				}
 				.row {
-					margin-bottom: 4rem;
+					margin-bottom: 0rem;
 					display: none;
 					&.active {
 						display: block;
@@ -359,6 +443,26 @@ body#home {
 						position: relative;
 						background: #f1f1f1;
 						cursor: pointer;
+						&#apollo {
+							background: url('../media/images/work/apollo/travel4.jpg') center center no-repeat;
+							background-size: cover;
+							// border: 2px solid #216be6;
+							position: relative;
+							.overlay {
+								position: absolute;
+								height: 100%;
+								width: 100%;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								opacity: 0.69;
+								background: #000;
+							}
+							img {
+								z-index: 5;
+							}
+						}
 						img {
 							height: 100%;
 							max-width: 100%;
@@ -371,6 +475,8 @@ body#home {
 						}
 						&#particles-js {
 							position: relative;
+							background: url('../media/images/work/p2p/stars4.jpg') center center no-repeat;
+							background-size: cover;
 							// font-family: $futura;
 							h1, img {
 								position: absolute;
@@ -384,14 +490,18 @@ body#home {
 						}
 					}
 					.info {
-						background: #fff;
-						box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.02);
-						padding: 2rem 20px 1.5rem 20px;
-						position: relative;
-						border: 1px solid #fff;
-						bottom: 0;
+						// background: #fff;
+						// box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.02);
+						padding: 2rem 0 1.5rem 0;
+						// position: relative;
+						// border: 1px solid #fff;
+						// bottom: 0;
 						h4 {
-							font-size: 22px;
+							font-size: 14px;
+							font-family: $lato;
+							font-weight: 800;
+							letter-spacing: 0.01em;
+							text-transform: uppercase;
 							// font-style: italic;
 							margin-bottom: 0;
 							color: #000;
@@ -410,9 +520,10 @@ body#home {
 							}
 						}
 						span {
-							font-family: $futura;
+							font-family: $lato;
 							text-transform: uppercase;
-							font-size: 14px;
+							font-size: 12px;
+							font-weight: 600;
 							word-wrap: break-word;
 							display: block;
 							color: #fff;
@@ -439,10 +550,11 @@ body#home {
 		}
 
 		&#skills {
+			display: none;
 			padding: 6rem 0 3rem 0; 
-			border-bottom: 1px solid #eee;
+			border-bottom: 2px solid #eee;
 			p {
-				font-size: 120%;
+				font-size: 100%;
 				span.caps {
 					font-size: 16px;
 				}
@@ -471,9 +583,9 @@ body#home {
 					}
 					span.caption {
 						display: block;
-						font-family: $futura;
+						font-family: $lato;
 						text-transform: uppercase;
-						font-size: 14px;
+						font-size: 12px;
 						padding-top: 1rem;
 					}
 				}
@@ -481,13 +593,24 @@ body#home {
 		}
 
 		&#contact {
-			padding: 6rem 0 6rem 0;
+			background: #fafafa;
+			padding: 6rem 0 3rem 0;
+			border-bottom: 2px solid #eee;
 			p {
+				&.sub {
+					font-family: $garamond;
+					line-height: 1.6;
+					font-size: 170%;
+					a {
+						padding-bottom: 0px;
+						border-bottom: none;
+					}
+				}
 				a {
 					text-decoration: none;
-					color: #69e;
+					color: #000;
 					&:hover {
-						color: #69e;
+						color: #000;
 					}
 				}
 			}
@@ -500,7 +623,7 @@ body#home {
 					a {
 						text-decoration: none;
 						color: #69e;
-						font-size: 110%;
+						font-size: 100%;
 						i {
 							display: inline-block;
 							width: 40px;
@@ -511,16 +634,19 @@ body#home {
 		}
 
 		&#footer {
+			background: #fff;
 			text-align: center;
-			padding: 2rem 0;
-			padding-left: 15%;
-			padding-right: 15%;
+			padding: 3rem 0 3rem 0;
 			p {
-				color: #333;
-				font-size: 100%;
 				margin-bottom: 0;
-				width: 100%;
+				font-size: 90%;
 			}
+			// p {
+			// 	color: #333;
+			// 	font-size: 100%;
+			// 	margin-bottom: 0;
+			// 	width: 100%;
+			// }
 		}
 
 	}

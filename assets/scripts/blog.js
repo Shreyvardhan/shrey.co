@@ -22,9 +22,11 @@ $(function () {
 				output += '<h3 class="blog-title"><a target="_blank" href="'+ item.link + '">' + item.title + '</a></h3>';
 				var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
 				if (item.title == "A 14 year old’s take on life" || item.title == "Here’s to the crazy ones.") {
-					var maxLength = 150 // maximum number of characters to extract
+					var maxLength = 140 // maximum number of characters to extract
+				} else if (item.title == "Staring into Infinity") {
+					var maxLength = 110
 				} else {
-					var maxLength = 120
+					var maxLength = 150
 				}
 				//trim the string to the maximum length
 				var trimmedString = yourString.substr(0, maxLength);

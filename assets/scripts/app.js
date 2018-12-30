@@ -86,6 +86,12 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider){
 		controller: 'tictactoeController'
 	})
 
+	.state('navchetna', {
+		url: '/project/navchetna',
+		templateUrl: "/assets/bower_components/angular/partials/navchetna.html",
+		controller: 'navchetnaController'
+	})
+
 	$urlRouterProvider.otherwise('/');
 	$locationProvider.html5Mode(true);
 
@@ -129,6 +135,11 @@ app.controller('pppController', function($scope){
 app.controller('tictactoeController', function($scope){
 	$scope.name = "Digital TicTacToe";
 	$scope.role = 'Design \u00B7 Development';
+}); 
+
+app.controller('navchetnaController', function($scope){
+	$scope.name = "Navchetna";
+	$scope.role = 'Print Design';
 }); 
 
 

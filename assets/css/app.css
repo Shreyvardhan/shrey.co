@@ -501,11 +501,12 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 body#home .container {
-  width: 70%; }
+  width: 60%; }
 
 body#home header#masthead {
-  -webkit-transform: translate3d(0, 25px, 0);
-  transform: translate3d(0, 25px, 0);
+  display: block;
+  -webkit-transform: translate3d(0, 35px, 0);
+  transform: translate3d(0, 35px, 0);
   text-align: center;
   overflow: hidden;
   position: fixed;
@@ -520,6 +521,9 @@ body#home header#masthead {
   body#home header#masthead a {
     text-decoration: none;
     color: inherit; }
+    body#home header#masthead a span {
+      border-bottom: 2px solid #000;
+      padding-bottom: 0px; }
     body#home header#masthead a:hover {
       color: inherit; }
   body#home header#masthead.sticky {
@@ -527,52 +531,70 @@ body#home header#masthead {
     transform: translate3d(0, 0, 0);
     background: rgba(255, 255, 255, 0.9);
     border-bottom: thin solid #eff0f0; }
+    body#home header#masthead.sticky h3, body#home header#masthead.sticky .right.columns {
+      line-height: 80px; }
+    body#home header#masthead.sticky img {
+      top: 28px; }
   body#home header#masthead h1 {
     font-size: 100%;
     text-align: left;
     margin-top: 0;
     letter-spacing: 0.01em; }
   body#home header#masthead img {
+    display: none;
     float: left;
     margin-right: 15px;
     position: relative;
-    top: 20px;
-    height: 40px;
-    width: 40px;
+    top: 22px;
+    height: 28px;
+    width: 28px;
     cursor: pointer; }
   body#home header#masthead h3 {
     margin-top: 0;
-    line-height: 82.5px;
+    line-height: 67.5px;
     text-align: left;
-    font-style: italic;
     letter-spacing: 0.005em;
-    font-size: 27px; }
+    font-family: "garamond-premier-pro-display", sans-serif;
+    font-size: 160%;
+    font-weight: 800;
+    margin-bottom: 0; }
   body#home header#masthead .right.columns {
-    font-family: "futura-pt", sans-serif;
-    text-align: left;
-    line-height: 80px;
+    text-align: right;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    font-family: "Lato", sans-serif;
     font-size: 14px;
-    color: #666;
-    position: relative;
-    top: 1px;
-    margin-top: 0;
-    font-weight: 700; }
+    font-weight: 800;
+    line-height: 67.5px;
+    letter-spacing: 0.05em; }
+    body#home header#masthead .right.columns ul#nav-right li {
+      display: inline;
+      margin: 0 7.5px; }
+      body#home header#masthead .right.columns ul#nav-right li a {
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+        body#home header#masthead .right.columns ul#nav-right li a.current {
+          border-bottom: 2px solid #000;
+          padding-bottom: 6px; }
+        body#home header#masthead .right.columns ul#nav-right li a:hover {
+          border-bottom: 2px solid #000;
+          padding-bottom: 6px; }
 
 body#home section span.subhead {
-  font-family: "futura-pt", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   color: #333; }
 
 body#home section h3.subhead {
-  font-family: "Didot1-Bold";
-  font-weight: 600;
-  padding-bottom: 2rem; }
+  font-family: "garamond-premier-pro-display", sans-serif;
+  font-size: 300%;
+  letter-spacing: 0.002em;
+  font-weight: 800;
+  padding-bottom: 0.5rem; }
 
 body#home section a.read-more {
   border: thin solid #e9ebea;
@@ -601,10 +623,24 @@ body#home section p {
   width: 100%; }
 
 body#home section#about {
-  padding-top: 175px;
-  padding-bottom: 6rem; }
+  padding-top: 185px;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #ddd; }
   body#home section#about p.intro {
     font-style: italic; }
+  body#home section#about p.italic {
+    font-family: "garamond-premier-pro-display", sans-serif;
+    font-style: italic;
+    font-size: 120%;
+    font-weight: 400; }
+    body#home section#about p.italic a {
+      color: #69e;
+      border-bottom: 1px solid #69e;
+      padding-bottom: 0px; }
+      body#home section#about p.italic a:hover {
+        color: #216be6;
+        border-color: #216be6;
+        background: none; }
   body#home section#about img#dp {
     border: 1px solid #fff;
     display: inline-block;
@@ -621,6 +657,9 @@ body#home section#about {
     margin-top: 1.5rem;
     position: relative;
     right: 60px; }
+  body#home section#about div.work p.intro {
+    font-family: "garamond-premier-pro-display", sans-serif;
+    font-size: 140%; }
   body#home section#about div.container.keynote {
     width: 100%;
     max-width: 100%;
@@ -635,6 +674,10 @@ body#home section#about {
         left: 0;
         right: 0;
         margin: 0 auto; }
+  body#home section#about div.row.item p {
+    font-family: "garamond-premier-pro-display", sans-serif;
+    font-size: 120%;
+    line-height: 34px; }
   body#home section#about div.container.showcase {
     margin-top: 4rem; }
     body#home section#about div.container.showcase .row {
@@ -649,11 +692,12 @@ body#home section#about {
       body#home section#about div.container.showcase div.caption .twelve {
         border: none; }
         body#home section#about div.container.showcase div.caption .twelve p {
+          font-family: "garamond-premier-pro-display", sans-serif;
           width: 70%;
           text-align: center;
           margin: 0 auto;
           font-style: italic;
-          font-size: 18px;
+          font-size: 22px;
           line-height: 24px;
           display: none; }
           body#home section#about div.container.showcase div.caption .twelve p.active {
@@ -691,11 +735,12 @@ body#home section#about {
 
 body#home section#blog {
   background: #fff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+  padding-top: 5rem;
   padding-bottom: 5rem; }
   body#home section#blog div.container a.blog-link {
     text-decoration: none;
-    color: #69e; }
+    color: 000; }
   body#home section#blog div.container div#blog-container {
     padding-top: 3rem; }
     body#home section#blog div.container div#blog-container div.story {
@@ -712,27 +757,28 @@ body#home section#blog {
       body#home section#blog div.container div#blog-container div.story:nth-child(odd) {
         margin-left: 0; }
       body#home section#blog div.container div#blog-container div.story span.blog-date, body#home section#blog div.container div#blog-container div.story span.blog-length {
-        font-family: "futura-pt", sans-serif;
+        font-family: "Lato", sans-serif;
         font-size: 15px;
         color: #666; }
       body#home section#blog div.container div#blog-container div.story h3:not(.blog-title) {
         display: none; }
       body#home section#blog div.container div#blog-container div.story blockquote {
         margin: 0;
-        line-height: 1.4; }
+        line-height: 1.5;
+        font-size: 16px; }
       body#home section#blog div.container div#blog-container div.story h3.blog-title {
         font-family: "Lato", sans-serif;
         letter-spacing: 0.02em;
         font-weight: 900;
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 0.5rem; }
         body#home section#blog div.container div#blog-container div.story h3.blog-title a {
           text-decoration: none;
           color: inherit; }
       body#home section#blog div.container div#blog-container div.story p {
-        font-family: "garamond-premier-pro", sans-serif;
-        font-size: 18px;
-        line-height: 1.4;
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
         margin-bottom: 1rem; }
         body#home section#blog div.container div#blog-container div.story p.blog-intro {
           font-family: "Lato";
@@ -741,8 +787,9 @@ body#home section#blog {
           font-size: 100%; }
 
 body#home section#work {
-  padding: 6rem 0 6rem 0;
-  margin-bottom: 2.5rem; }
+  padding: 7rem 0 6rem 0;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #ddd; }
   body#home section#work ul {
     display: inline-block;
     list-style: none;
@@ -778,7 +825,7 @@ body#home section#work {
       body#home section#work div.container#projects div.toggle i.r {
         right: -50px; }
     body#home section#work div.container#projects .row {
-      margin-bottom: 4rem;
+      margin-bottom: 0rem;
       display: none; }
       body#home section#work div.container#projects .row.active {
         display: block; }
@@ -794,6 +841,22 @@ body#home section#work {
         position: relative;
         background: #f1f1f1;
         cursor: pointer; }
+        body#home section#work div.container#projects .columns .img-wrap#apollo {
+          background: url("../media/images/work/apollo/travel4.jpg") center center no-repeat;
+          background-size: cover;
+          position: relative; }
+          body#home section#work div.container#projects .columns .img-wrap#apollo .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.69;
+            background: #000; }
+          body#home section#work div.container#projects .columns .img-wrap#apollo img {
+            z-index: 5; }
         body#home section#work div.container#projects .columns .img-wrap img {
           height: 100%;
           max-width: 100%;
@@ -803,7 +866,9 @@ body#home section#work {
           body#home section#work div.container#projects .columns .img-wrap img.sm {
             display: none; }
         body#home section#work div.container#projects .columns .img-wrap#particles-js {
-          position: relative; }
+          position: relative;
+          background: url("../media/images/work/p2p/stars4.jpg") center center no-repeat;
+          background-size: cover; }
           body#home section#work div.container#projects .columns .img-wrap#particles-js h1, body#home section#work div.container#projects .columns .img-wrap#particles-js img {
             position: absolute;
             top: 50%;
@@ -814,15 +879,13 @@ body#home section#work {
             body#home section#work div.container#projects .columns .img-wrap#particles-js h1.sm, body#home section#work div.container#projects .columns .img-wrap#particles-js img.sm {
               display: none; }
       body#home section#work div.container#projects .columns .info {
-        background: #fff;
-        -webkit-box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.02);
-        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.02);
-        padding: 2rem 20px 1.5rem 20px;
-        position: relative;
-        border: 1px solid #fff;
-        bottom: 0; }
+        padding: 2rem 0 1.5rem 0; }
         body#home section#work div.container#projects .columns .info h4 {
-          font-size: 22px;
+          font-size: 14px;
+          font-family: "Lato", sans-serif;
+          font-weight: 800;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
           margin-bottom: 0;
           color: #000; }
           body#home section#work div.container#projects .columns .info h4 span {
@@ -836,9 +899,10 @@ body#home section#work {
               body#home section#work div.container#projects .columns .info h4 span.sm::first-line {
                 color: #000; }
         body#home section#work div.container#projects .columns .info span {
-          font-family: "futura-pt", sans-serif;
+          font-family: "Lato", sans-serif;
           text-transform: uppercase;
-          font-size: 14px;
+          font-size: 12px;
+          font-weight: 600;
           word-wrap: break-word;
           display: block;
           color: #fff; }
@@ -856,10 +920,11 @@ body#home section#work {
         margin-left: 0; }
 
 body#home section#skills {
+  display: none;
   padding: 6rem 0 3rem 0;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 2px solid #eee; }
   body#home section#skills p {
-    font-size: 120%; }
+    font-size: 100%; }
     body#home section#skills p span.caps {
       font-size: 16px; }
   body#home section#skills div.tools {
@@ -883,18 +948,27 @@ body#home section#skills {
         width: 50px; }
       body#home section#skills div.tools .item span.caption {
         display: block;
-        font-family: "futura-pt", sans-serif;
+        font-family: "Lato", sans-serif;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
         padding-top: 1rem; }
 
 body#home section#contact {
-  padding: 6rem 0 6rem 0; }
+  background: #fafafa;
+  padding: 6rem 0 3rem 0;
+  border-bottom: 2px solid #eee; }
+  body#home section#contact p.sub {
+    font-family: "garamond-premier-pro-display", sans-serif;
+    line-height: 1.6;
+    font-size: 170%; }
+    body#home section#contact p.sub a {
+      padding-bottom: 0px;
+      border-bottom: none; }
   body#home section#contact p a {
     text-decoration: none;
-    color: #69e; }
+    color: #000; }
     body#home section#contact p a:hover {
-      color: #69e; }
+      color: #000; }
   body#home section#contact ul.social {
     list-style: none; }
     body#home section#contact ul.social li {
@@ -904,21 +978,18 @@ body#home section#contact {
       body#home section#contact ul.social li a {
         text-decoration: none;
         color: #69e;
-        font-size: 110%; }
+        font-size: 100%; }
         body#home section#contact ul.social li a i {
           display: inline-block;
           width: 40px; }
 
 body#home section#footer {
+  background: #fff;
   text-align: center;
-  padding: 2rem 0;
-  padding-left: 15%;
-  padding-right: 15%; }
+  padding: 3rem 0 3rem 0; }
   body#home section#footer p {
-    color: #333;
-    font-size: 100%;
     margin-bottom: 0;
-    width: 100%; }
+    font-size: 90%; }
 
 @media only screen and (max-width: 1194px) {
   body#home section#skills div.tools .item {
@@ -1403,7 +1474,7 @@ body, html {
   overflow-x: hidden; }
 
 body {
-  font-family: "garamond-premier-pro", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -1417,7 +1488,22 @@ section {
   section.grey {
     background: #fafafa; }
   section p {
-    font-size: 120%; }
+    font-size: 100%; }
+    section p span.bold {
+      font-weight: 800; }
+    section p a {
+      border-bottom: 2px solid #aaa;
+      text-decoration: none;
+      padding-bottom: 4px;
+      color: #000;
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+      section p a:hover {
+        background: #ddd;
+        border-bottom: 2px solid #000;
+        color: #000;
+        cursor: pointer; }
 
 .ng-enter {
   -webkit-transition: 0.6s linear all;

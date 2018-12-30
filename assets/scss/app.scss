@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-	font-family: $garamond;
+	font-family: $lato;
 	font-style: normal;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
@@ -27,7 +27,23 @@ section {
 		background: #fafafa;
 	}
 	p {
-		font-size: 120%;
+		font-size: 100%;
+		span.bold {
+			font-weight: 800;
+		}
+		a {
+			border-bottom: 2px solid #aaa;
+			text-decoration: none;
+			padding-bottom: 4px;
+			color: #000;
+			transition: all 0.4s ease;
+			&:hover {
+				background: #ddd;
+				border-bottom: 2px solid #000;
+				color: #000;
+				cursor: pointer;
+			}
+		}
 	}
 }
 
